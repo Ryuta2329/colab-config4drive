@@ -1,6 +1,6 @@
 colab_config <- function(local_path="/usr/local/lib/python3.7/dist-packages/google/colab/_ipython.py") {
   if (!require(googledrive))
-    install.packages(“googledrive”)
+    install.packages("googledrive")
   if (!require(httpuv))
     install.packages("httpuv")
 
