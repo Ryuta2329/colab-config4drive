@@ -4,4 +4,4 @@ This contains a short R script to use inside Google Colab to prepare the active 
 
 ## Troubleshooting
 
-* Current Python version for the local_path argument is 3.7, so you may update python version occasionally.
+* Current Python version for the ```local_path``` argument is ```3.7```, so you may update python version occasionally.
