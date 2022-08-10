@@ -1,15 +1,15 @@
 colab_config = function(local_path="/usr/local/lib/python3.7/dist-packages/google/colab/_ipython.py") {
-  if (!require(googledrive))
+  if (!require(googledrive, quietly = TRUE, warn.conflicts=FALSE))
     install.packages("googledrive")
-  if (!require(httpuv))
+  if (!require(httpuv, quietly = TRUE, warn.conflicts=FALSE))
     install.packages("httpuv")
 
   # Y cargo ambas librerias
-  library(googledrive) 
-  library(httpuv)
+  library(googledrive, quietly = TRUE, warn.conflicts=FALSE) 
+  library(httpuv, quietly = TRUE, warn.conflicts=FALSE)
 
   if (file.exists(local_path)) {  
-    if (!require(R.Utils))
+    if (!require(R.Utils, quietly = TRUE, warn.conflicts=FALSE))
       install.packages("R.utils")
 
     library("R.utils", quietly=TRUE, warn.conflicts=FALSE)
